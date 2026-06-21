@@ -1,10 +1,7 @@
 name: Daily Health Advice
 
 on:
-  schedule:
-    # 毎日 21:45 UTC = 翌 06:45 JST に実行
-    - cron: "45 21 * * *"
-  workflow_dispatch:  # 手動テスト用
+  workflow_dispatch:  # 手動実行のみ
 
 jobs:
   send-advice:
